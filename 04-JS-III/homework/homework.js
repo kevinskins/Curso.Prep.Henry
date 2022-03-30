@@ -211,21 +211,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var array1=[];
-  var a = numero;
-  var b = [];
-  for (let index = 0; index < 10; index++) {
-    a = a + 2; 
-    if (index === a) break;
-      
-     else   
-       array1.push(a);
-       b.pop;
-       b.push(index);
-       
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
+    }
   }
-  if (b === a) "Se interrumpió la ejecución";
-  else return array1;
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
 }
 
 function continueStatement(numero) {
